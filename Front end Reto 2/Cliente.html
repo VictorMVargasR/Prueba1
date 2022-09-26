@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cliente</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="JavaScript/myScript.js"></script>
+    </head>
+
+    <body>
+        <h1>Cliente</h1>
+        <h3>Seleccione opcion deseada</h3><br>
+
+        <table>
+            <tr>
+                <td><b>ID: </b></td>
+                <td><Input id="ClienteId" type="number" readonly="true"></Input></td>
+            </tr>
+            <tr>
+                <td><b>NOMBRE: </b></td>
+                <td><Input id="ClienteMarca" type="text"></Input></td>
+            </tr>
+            <tr>
+                <td><b>EMAIL: </b></td>
+                <td><Input id="ClienteModelo" type="text"></Input></td>
+            </tr>
+            <tr>
+                <td><b>EDAD: </b></td>
+                <td><Input id="ClienteCategoria" type="number"></Input></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <button onclick="leerClientes()">Consultar</button>
+        <button onclick="">Registrar</button>
+        <button onclick="">Modificar</button>
+        <button onclick="">Eliminar</button><br>
+
+        <br>
+
+        <div id="ClienteContenido">
+
+        </div>
+
+    </body>
+
+</html>
