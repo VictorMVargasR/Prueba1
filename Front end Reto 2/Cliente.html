@@ -11,40 +11,44 @@
     </head>
 
     <body>
+        <a href="index.html" >Retorno Menu Inicio</a>
+        
+        
         <h1>Cliente</h1>
         <h3>Seleccione opcion deseada</h3><br>
 
         <table>
             <tr>
                 <td><b>ID: </b></td>
-                <td><Input id="ClienteId" type="number" readonly="true"></Input></td>
+                <td><Input id="idc" type="number"></Input></td>
             </tr>
             <tr>
                 <td><b>NOMBRE: </b></td>
-                <td><Input id="ClienteMarca" type="text"></Input></td>
+                <td><Input id="nc" type="text"></Input></td>
             </tr>
             <tr>
                 <td><b>EMAIL: </b></td>
-                <td><Input id="ClienteModelo" type="text"></Input></td>
+                <td><Input id="em" type="text"></Input></td>
             </tr>
             <tr>
                 <td><b>EDAD: </b></td>
-                <td><Input id="ClienteCategoria" type="number"></Input></td>
+                <td><Input id="edad" type="number"></Input></td>
             </tr>
         </table>
 
         <br>
 
-        <button onclick="leerClientes()">Consultar</button>
-        <button onclick="">Registrar</button>
-        <button onclick="">Modificar</button>
-        <button onclick="">Eliminar</button><br>
+        <button onclick="traerinfocli()">Consultar</button>
+        <button onclick="creaCli()">Registrar</button>
+        <button onclick="AtualizarCli()">Modificar</button>
+        <button onclick="traerinfocli()">Eliminar</button><br>
 
         <br>
 
-        <div id="ClienteContenido">
+        <div id="resultado">
 
         </div>
+        
 
     </body>
 
