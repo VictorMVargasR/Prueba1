@@ -7,46 +7,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Motos</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script type="text/javascript" src="JavaScript/myScript.js"></script>
+        <script type="text/javascript" src="JavaScript/JsMotos.js"></script>
     </head>
 
     <body>
+        <a href="index.html" >Retorno Menu Inicio</a>
+        
         <h1>Motocicletas</h1>
         <h3>Seleccione opcion deseada</h3><br>
 
         <table>
             <tr>
                 <td><b>ID: </b></td>
-                <td><Input id="MotoId" type="number" readonly="true"></Input></td>
+                <td><Input id="idm" type="number"></Input></td>
             </tr>
             <tr>
                 <td><b>MARCA: </b></td>
-                <td><Input id="MotoMarca" type="text"></Input></td>
+                <td><Input id="mm" type="text"></Input></td>
             </tr>
             <tr>
                 <td><b>MODELO: </b></td>
-                <td><Input id="MotoModelo" type="number"></Input></td>
+                <td><Input id="model" type="number"></Input></td>
             </tr>
             <tr>
                 <td><b>CATEGORIA: </b></td>
-                <td><Input id="MotoCategoria" type="number"></Input></td>
+                <td><Input id="categ" type="number"></Input></td>
             </tr>
             <tr>
                 <td><b>NOMBRE: </b></td>
-                <td><Input id="MotoNombre" type="text"></Input></td>
+                <td><Input id="name" type="text"></Input></td>
             </tr>
         </table>
 
         <br>
 
-        <button onclick="">Consultar</button>
-        <button onclick="">Registrar</button>
-        <button onclick="">Modificar</button>
-        <button onclick="">Eliminar</button>
+        <button onclick="traerinfoMot()">Consultar</button>
+        <button onclick="creaMot()">Registrar</button>
+        <button onclick="AtualizarMot()">Modificar</button>
 
         <br>
 
-        <div id="MotoContenido">
+        <div id="resultado">
 
         </div>
 
