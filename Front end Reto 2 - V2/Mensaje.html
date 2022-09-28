@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mensaje</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script type="text/javascript" src="JavaScript/myScript.js"></script>
+        <script type="text/javascript" src="JavaScript/JsMensaje.js"></script>
     </head>
 
     <body>
@@ -16,27 +16,18 @@
 
         <table>
             <tr>
-                <td><b>ID: </b></td>
-                <td><Input id="MensajeId" type="number" readonly="true"></Input></td>
-            </tr>
-            <tr>
                 <td><b>MENSAJE: </b></td>
-                <td><Input id="MensajeMarca" type="text"></Input></td>
+                <td><Input id="TextoMensaje" type="text"></Input></td>
             </tr>
         </table>
-
         <br>
-
-        <button onclick="">Consultar</button>
-        <button onclick="">Registrar</button>
-        <button onclick="">Modificar</button>
-        <button onclick="">Eliminar</button>
-
-        <br>
-
-        <div id="MensajeContenido">
-
+        <div id="BotonesMensaje">
+            <button onclick="leerMensage()">Consultar</button>
+            <button onclick="guardarMensaje()">Registrar</button>
         </div>
+        <br>
+        <div id="MensajeContenido"> </div>
+        <br>
 
     </body>
 
